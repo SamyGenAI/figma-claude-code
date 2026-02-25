@@ -1,12 +1,6 @@
 import InfographicRenderer from './InfographicRenderer';
-import ultimateClaudeGuide from './data/ultimate-claude-guide';
-import aiSystemsVsTools    from './data/ai-systems-vs-tools';
+import infographics        from './data';
 import { getTheme }        from './themes';
-
-const infographics = {
-  'ultimate-claude-guide': ultimateClaudeGuide,
-  'ai-systems-vs-tools':   aiSystemsVsTools,
-};
 
 function getParams() {
   const params = new URLSearchParams(window.location.search);
@@ -30,13 +24,14 @@ export default function App() {
     );
   }
 
-  // Dev preview: all infographics
+  // Dev preview: all registered infographics
   return (
     <div style={wrapStyle}>
-      <InfographicRenderer data={ultimateClaudeGuide} themeId={themeId} />
-      <div className="mt-8">
-        <InfographicRenderer data={aiSystemsVsTools} themeId={themeId} />
-      </div>
+      {Object.values(infographics).map((data) => (
+        <div key={data.id} className="mt-8 first:mt-0">
+          <InfographicRenderer data={data} themeId={themeId} />
+        </div>
+      ))}
     </div>
   );
 }
