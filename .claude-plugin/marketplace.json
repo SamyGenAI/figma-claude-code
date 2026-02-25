@@ -10,8 +10,8 @@
     {
       "name": "figma-infographic",
       "source": {
-        "source": "github",
-        "repo": "SamyGenAI/figma-claude-code"
+        "source": "url",
+        "url": "https://github.com/SamyGenAI/figma-claude-code.git"
       },
       "description": "Generate branded LinkedIn infographics from any topic. Ingest brand tokens from Figma, design with AI, and push back to Figma."
     }
