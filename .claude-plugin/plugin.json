@@ -1,0 +1,12 @@
+{
+  "name": "figma-infographic",
+  "description": "Generate branded LinkedIn infographics from any topic. Ingest brand tokens from Figma, design the layout with a specialized agent, and push the result back to Figma — all in one flow.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Samy Chouaf"
+  },
+  "homepage": "https://github.com/SamyGenAI/figma-claude-code",
+  "repository": "https://github.com/SamyGenAI/figma-claude-code",
+  "license": "MIT",
+  "keywords": ["figma", "infographic", "linkedin", "design", "brand", "react", "tailwind"]
+}

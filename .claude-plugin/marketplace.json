@@ -1,0 +1,19 @@
+{
+  "name": "figma-infographic",
+  "owner": {
+    "name": "Samy Chouaf"
+  },
+  "metadata": {
+    "description": "Generate branded LinkedIn infographics — brand ingestion, AI design, and Figma export in one plugin."
+  },
+  "plugins": [
+    {
+      "name": "figma-infographic",
+      "source": {
+        "source": "github",
+        "repo": "SamyGenAI/figma-claude-code"
+      },
+      "description": "Generate branded LinkedIn infographics from any topic. Ingest brand tokens from Figma, design with AI, and push back to Figma."
+    }
+  ]
+}
